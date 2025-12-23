@@ -9,6 +9,18 @@
   <meta name="description" content="Firma contable para emprendedores y pymes en Panamá. Servicios contables, nómina, consultoría y soluciones digitales." />
   <!-- Color de UI para móviles (Android/Chrome, etc.) -->
   <meta name="theme-color" content="#1F2A44" />
+  <!-- GitHub Pages: asegura trailing slash en /CHEN-CO para que las rutas relativas (CSS/JS/assets) resuelvan bien -->
+  <script>
+    (function () {
+      const isGitHubPages = location.hostname.endsWith('github.io');
+      const path = location.pathname;
+      const last = path.split('/').pop() || '';
+      const looksLikeFile = last.includes('.');
+      if (isGitHubPages && !path.endsWith('/') && !looksLikeFile) {
+        location.replace(path + '/' + location.search + location.hash);
+      }
+    })();
+  </script>
   <!-- Favicon local (SVG). Si necesitas soporte legacy, se puede añadir un .ico -->
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <!-- Tipografías (Google Fonts) -->
