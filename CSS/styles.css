@@ -311,3 +311,83 @@ header.header-scrolled{box-shadow:0 10px 28px rgba(0,0,0,.12)}
   *,:before,:after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;scroll-behavior:auto !important}
   .animate-on-scroll{opacity:1;transform:none}
 }
+
+/* ====== Responsive refinements (mobile/tablet) ======
+   Nota: las grids ya son mobile-first; aquí afinamos nav, espaciados y timeline.
+*/
+
+/* Tablet y abajo */
+@media (max-width: 900px){
+  .section{padding:54px 0}
+}
+
+/* Mobile: navegación más compacta + timeline vertical */
+@media (max-width: 720px){
+  /* Header / Nav */
+  .nav{flex-direction:column;align-items:flex-start;gap:10px}
+  .nav > div:last-child{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .nav a{margin-left:0}
+  .ml-1{margin-left:0}
+
+  /* Botón CTA de la nav: ocupa toda la línea si hace falta */
+  .nav .btn{padding:.78rem 1.05rem}
+
+  /* Ajustes de tipografía / marca */
+  .brand-name{font-size:1.25rem}
+  .tagline{letter-spacing:.18em}
+
+  /* Hero */
+  .hero-card{padding:16px}
+  .ratio{border-radius:16px}
+
+  /* Timeline en vertical (mejor lectura en una sola columna) */
+  .timeline{padding-left:14px}
+  .timeline::before{
+    left:18px;
+    right:auto;
+    top:18px;
+    bottom:18px;
+    width:4px;
+    height:auto;
+  }
+  .timeline .timeline-line-animated{
+    left:18px;
+    right:auto;
+    top:18px;
+    bottom:18px;
+    width:4px;
+    height:auto;
+    transform-origin:top;
+    transform:scaleY(0);
+    transition:transform 1.2s ease;
+    background:linear-gradient(180deg, rgba(76,122,242,.20), var(--accent), rgba(76,122,242,.20));
+    background-size:100% 200%;
+  }
+  .timeline.is-animating .timeline-line-animated{
+    /* reutiliza el keyframe, pero en vertical se verá como “barrido” */
+    animation:none;
+  }
+  .timeline.is-animating .timeline-line-animated{transform:scaleY(1)}
+
+  .timeline .step{
+    padding-left:54px;
+  }
+  .timeline .dot{
+    left:18px;
+    top:18px;
+    transform:translate(-50%,-50%);
+  }
+  .timeline .label,
+  .timeline .step h3,
+  .timeline .step p{
+    text-align:left;
+  }
+}
+
+/* Mobile pequeño */
+@media (max-width: 420px){
+  .section{padding:46px 0}
+  .btn,.btn-outline,.cta .cta-btn{width:100%;text-align:center}
+  .cta{padding:22px}
+  .footer-flex{gap:10px}
+}
