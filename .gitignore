@@ -1,0 +1,11 @@
+# Editor / IDE
+.vscode/
+
+# Cursor workspace/runtime artifacts
+.cursor/
+
+# OS / misc
+Thumbs.db
+Desktop.ini
+
+
