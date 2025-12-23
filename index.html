@@ -2,9 +2,20 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
+  <!-- Viewport responsive (mobile-first) -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chen & Co. – Soluciones Contables</title>
+  <!-- SEO básico -->
   <meta name="description" content="Firma contable para emprendedores y pymes en Panamá. Servicios contables, nómina, consultoría y soluciones digitales." />
+  <!-- Color de UI para móviles (Android/Chrome, etc.) -->
+  <meta name="theme-color" content="#1F2A44" />
+  <!-- Favicon local (SVG). Si necesitas soporte legacy, se puede añadir un .ico -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <!-- Tipografías (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Estilos principales -->
   <link rel="stylesheet" href="CSS/styles.css" />
 </head>
 <body>
@@ -19,7 +30,7 @@
           <text x="50" y="62" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="54" fill="var(--brand-navy)">&amp;</text>
         </svg>
         <div>
-          <div class="brand-name serif brand-name-color">Chen &amp; Co.</div>
+          <div class="brand-name brand-name-color">Chen &amp; Co.</div>
           <div class="tagline">Soluciones Contables</div>
         </div>
       </div>
@@ -36,7 +47,8 @@
     <!-- ====== Hero ====== -->
     <section class="section">
       <div class="container grid grid-2">
-        <div>
+        <!-- Columna izquierda: propuesta de valor -->
+        <div class="animate-on-scroll">
           <span class="pill">Contabilidad simple, decisiones claras</span>
           <h1 class="serif mt-06">Tu firma contable con cercanía humana</h1>
           <p class="text-muted mtb-12 max-56ch">Acompañamos a emprendedores y pymes en Panamá con finanzas claras, ordenadas y al día.</p>
@@ -50,9 +62,11 @@
             <span class="pill">💻 Tecnología práctica</span>
           </div>
         </div>
-        <div class="card hero-card">
+        <!-- Columna derecha: visual del hero + marca -->
+        <div class="card hero-card animate-on-scroll">
           <div class="ratio">
-            <img alt="Equipo contable revisando reportes" src="https://images.unsplash.com/photo-1524638431100-93d95c968f03?auto=format&fit=crop&w=1600&q=80" />
+            <!-- Imagen local (no depende de internet). Carga prioritaria por ser above-the-fold -->
+            <img alt="Equipo contable revisando reportes" src="assets/hero.svg" loading="eager" fetchpriority="high" decoding="async" />
           </div>
           <div class="hero-logo-row">
             <svg width="46" height="46" viewBox="0 0 100 100" role="img" aria-label="Isotipo Chen & Co.">
@@ -61,7 +75,7 @@
               <text x="50" y="62" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="54" fill="var(--brand-navy)">&amp;</text>
             </svg>
             <div>
-              <div class="serif brand-navy fw-800 fs-12">Chen &amp; Co.</div>
+              <div class="brand-name brand-navy fw-800 fs-12">Chen &amp; Co.</div>
               <div class="tagline">Soluciones Contables</div>
             </div>
           </div>
@@ -75,9 +89,9 @@
         <h2 class="serif">Servicios</h2>
         <div class="grid grid-4 mt-18">
           <!-- card 1 -->
-          <article class="svc card" aria-label="Declaración de impuestos">
+          <article class="svc card animate-on-scroll" aria-label="Declaración de impuestos">
             <div class="thumb">
-              <img alt="Declaración de impuestos" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80">
+              <img alt="Declaración de impuestos" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80" loading="lazy" decoding="async">
             </div>
             <div class="body">
               <h3 class="serif">Declaración de impuestos</h3>
@@ -85,9 +99,9 @@
             </div>
           </article>
           <!-- card 2 -->
-          <article class="svc card" aria-label="Nómina y Seguro Social">
+          <article class="svc card animate-on-scroll" aria-label="Nómina y Seguro Social">
             <div class="thumb">
-              <img alt="Nómina y Seguro Social" src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1200&q=80">
+              <img alt="Nómina y Seguro Social" src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&w=1200&q=80" loading="lazy" decoding="async">
             </div>
             <div class="body">
               <h3 class="serif">Nómina y Seguro Social</h3>
@@ -95,9 +109,9 @@
             </div>
           </article>
           <!-- card 3 -->
-          <article class="svc card" aria-label="Consultoría financiera">
+          <article class="svc card animate-on-scroll" aria-label="Consultoría financiera">
             <div class="thumb">
-              <img alt="Consultoría financiera" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1200&q=80">
+              <img alt="Consultoría financiera" src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=1200&q=80" loading="lazy" decoding="async">
             </div>
             <div class="body">
               <h3 class="serif">Consultoría financiera</h3>
@@ -105,9 +119,9 @@
             </div>
           </article>
           <!-- card 4 -->
-          <article class="svc card" aria-label="Servicios digitales">
+          <article class="svc card animate-on-scroll" aria-label="Servicios digitales">
             <div class="thumb">
-              <img alt="Servicios digitales" src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=1200&q=80">
+              <img alt="Servicios digitales" src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?auto=format&fit=crop&w=1200&q=80" loading="lazy" decoding="async">
             </div>
             <div class="body">
               <h3 class="serif">Servicios digitales</h3>
@@ -123,10 +137,10 @@
       <div class="container">
         <h2 class="serif">¿Por qué elegirnos?</h2>
         <div class="grid grid-4 why mt-18">
-          <div class="card item"><h3 class="serif">Cercanía y trato humano</h3><p class="text-muted">Explicamos sin tecnicismos, con empatía.</p></div>
-          <div class="card item"><h3 class="serif">Especialistas en pymes</h3><p class="text-muted">Servicios adaptados a emprendedores y pymes.</p></div>
-          <div class="card item"><h3 class="serif">Modelos flexibles</h3><p class="text-muted">Planes según tu etapa y necesidades.</p></div>
-          <div class="card item"><h3 class="serif">Tecnología accesible</h3><p class="text-muted">Herramientas simples que facilitan tu día a día.</p></div>
+          <div class="card item animate-on-scroll"><h3 class="serif">Cercanía y trato humano</h3><p class="text-muted">Explicamos sin tecnicismos, con empatía.</p></div>
+          <div class="card item animate-on-scroll"><h3 class="serif">Especialistas en pymes</h3><p class="text-muted">Servicios adaptados a emprendedores y pymes.</p></div>
+          <div class="card item animate-on-scroll"><h3 class="serif">Modelos flexibles</h3><p class="text-muted">Planes según tu etapa y necesidades.</p></div>
+          <div class="card item animate-on-scroll"><h3 class="serif">Tecnología accesible</h3><p class="text-muted">Herramientas simples que facilitan tu día a día.</p></div>
         </div>
       </div>
     </section>
@@ -136,25 +150,25 @@
       <div class="container p-0">
         <h2 class="serif">Nuestro proceso</h2>
         <div class="timeline grid grid-4 mt-44 pt-20">
-          <div class="step">
+          <div class="step animate-on-scroll">
             <div class="dot" aria-hidden="true"></div>
             <div class="label">Paso 01</div>
             <h3 class="serif center">Diagnóstico</h3>
             <p class="center text-muted">Revisamos tu situación y necesidades.</p>
           </div>
-          <div class="step">
+          <div class="step animate-on-scroll">
             <div class="dot" aria-hidden="true"></div>
             <div class="label">Paso 02</div>
             <h3 class="serif center">Propuesta</h3>
             <p class="center text-muted">Plan de trabajo y honorarios claros.</p>
           </div>
-          <div class="step">
+          <div class="step animate-on-scroll">
             <div class="dot" aria-hidden="true"></div>
             <div class="label">Paso 03</div>
             <h3 class="serif center">Implementación</h3>
             <p class="center text-muted">Ordenamos y automatizamos tu operación.</p>
           </div>
-          <div class="step">
+          <div class="step animate-on-scroll">
             <div class="dot" aria-hidden="true"></div>
             <div class="label">Paso 04</div>
             <h3 class="serif center">Acompañamiento</h3>
@@ -168,8 +182,8 @@
     <section class="section">
       <div class="container">
         <h2 class="serif fs-14">Sobre nosotros</h2>
-        <div class="card card-inline">
-          <img alt="Winny Chen" class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" />
+        <div class="card card-inline animate-on-scroll">
+          <img alt="Winny Chen" class="avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" loading="lazy" decoding="async" />
           <div>
             <div class="serif brand-navy fw-700">Winny Chen</div>
             <div class="subtle">Lead Accountant &amp; Founder</div>
@@ -181,7 +195,7 @@
     <!-- ====== CTA ====== -->
     <section class="section">
       <div class="container">
-        <div class="cta">
+        <div class="cta animate-on-scroll">
           <div class="cta-grid">
             <div>
               <h2 class="serif text-white">¿Listo para tener tus finanzas claras cada mes?</h2>
@@ -197,7 +211,7 @@
     <section id="contacto" class="section card w-page m-auto">
       <div class="container p-0">
         <div class="grid grid-2">
-          <div>
+          <div class="animate-on-scroll">
             <h2 class="serif">Hablemos</h2>
             <p class="text-muted">
               Tel: <a href="tel:+5073945180">394-5180</a> ·
@@ -216,9 +230,9 @@
               <button class="btn" type="submit">Enviar</button>
             </form>
           </div>
-          <div class="card pad-16">
+          <div class="card pad-16 animate-on-scroll">
             <div class="ratio">
-              <img alt="Equipo de trabajo" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1600&q=80">
+              <img alt="Equipo de trabajo" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1600&q=80" loading="lazy" decoding="async">
             </div>
             <p class="text-muted mb-09">Atendemos a emprendedores y pymes en Panamá con servicios claros y flexibles.</p>
           </div>
@@ -236,10 +250,25 @@
           <polygon points="78,29 78,71 50,87 22,71 22,29 50,13" fill="#fff"></polygon>
           <text x="50" y="62" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="54" fill="var(--brand-navy)">&amp;</text>
         </svg>
-        <div class="serif brand-navy fw-800">Chen &amp; Co.</div>
+        <div class="brand-name brand-navy fw-800">Chen &amp; Co.</div>
       </div>
       <div class="muted-92">© <span id="year"></span> Chen & Co. · Todos los derechos reservados</div>
-      <div class="footer-links"><a href="#">Instagram</a><a href="#">LinkedIn</a></div>
+      <div class="muted-92">Desarrollado by <span style="color:#0098FF">blue</span>.code</div>
+      <!-- Redes sociales: usa SVG inline para evitar librerías y mantener control de estilos -->
+      <div class="footer-links" aria-label="Redes sociales">
+        <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abrir en nueva pestaña)">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm4.25 4.1a4.4 4.4 0 1 1 0 8.8a4.4 4.4 0 0 1 0-8.8Zm0 1.5a2.9 2.9 0 1 0 0 5.8a2.9 2.9 0 0 0 0-5.8Zm5.25-1.78a1.03 1.03 0 1 1 0 2.06a1.03 1.03 0 0 1 0-2.06Z"></path>
+          </svg>
+          <span class="sr-only">Instagram</span>
+        </a>
+        <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (abrir en nueva pestaña)">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+            <path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8.2 19H5.6V9.4h2.6V19ZM6.9 8.2a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3ZM19 19h-2.6v-5.2c0-1.24-.02-2.84-1.73-2.84c-1.73 0-2 1.35-2 2.75V19H10V9.4h2.5v1.3h.04c.35-.66 1.2-1.36 2.48-1.36c2.66 0 3.15 1.75 3.15 4.02V19Z"></path>
+          </svg>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </div>
     </div>
   </footer>
 
@@ -247,5 +276,7 @@
     // Año dinámico
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <!-- Animaciones y mejoras de interacción (smooth scroll, reveal on scroll, timeline) -->
+  <script src="JS/animations.js"></script>
 </body>
 </html>
