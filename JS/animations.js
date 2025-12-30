@@ -36,6 +36,8 @@
   // ====== 1) Smooth scroll ======
   // Convierte clicks en links internos (<a href="#id">) en scroll suave.
   // Compensa la altura del header sticky para que la sección no quede “tapada”.
+  // Nota: no actualizamos el hash manualmente para evitar "saltos" del navegador;
+  // el usuario igual navega correctamente y el scroll queda controlado.
   function initSmoothScroll() {
     const header = document.querySelector(SELECTORS.header);
     const links = document.querySelectorAll('a[href^="#"]');
@@ -119,6 +121,8 @@
   // Animaciones puntuales con estilos inline:
   // - No dependen de clases extra
   // - Son “above-the-fold”, así que se disparan al cargar.
+  // Mantenimiento: si cambias la estructura del Hero en index.html,
+  // revisa SELECTORS.heroLeft y SELECTORS.heroCard para evitar selectors rotos.
   function initHeroAnimations() {
     const heroLeft = document.querySelector(SELECTORS.heroLeft);
     const heroCard = document.querySelector(SELECTORS.heroCard);
@@ -177,6 +181,7 @@
   // ====== 6) Timeline: línea + dots progresivos ======
   // - Crea el div .timeline-line-animated si no existe
   // - Al entrar al viewport: activa la línea y setea --cc-i para secuencias (CSS)
+  // Nota: el CSS tiene una variante vertical para mobile (max-width: 720px).
   function initTimelineAnimations() {
     const timeline = document.querySelector(SELECTORS.timeline);
     if (!timeline) return;

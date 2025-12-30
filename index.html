@@ -47,6 +47,12 @@
         </div>
       </div>
       <div>
+        <!--
+          Navegación interna (anchors):
+          - Cada link apunta a un id dentro de <main>
+          - El scroll suave + compensación por header sticky lo maneja JS/animations.js
+        -->
+        <a href="#quienes-somos">Quiénes somos</a>
         <a href="#servicios">Servicios</a>
         <a href="#proceso">Proceso</a>
         <a href="#porque">Por qué</a>
@@ -56,6 +62,16 @@
   </header>
 
   <main id="contenido-principal">
+    <!--
+      Estructura de la página (orden de secciones):
+      - Hero (presentación)
+      - Quiénes somos (contexto + valores)
+      - Servicios
+      - Por qué elegirnos
+      - Proceso
+      - Sobre nosotros (Winny + mensaje)
+      - CTA / Contacto / Footer
+    -->
     <!-- ====== Hero ====== -->
     <section class="section">
       <div class="container grid grid-2">
@@ -89,6 +105,41 @@
             <div>
               <div class="brand-name brand-navy fw-800 fs-12">Chen &amp; Co.</div>
               <div class="tagline">Soluciones Contables</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Quiénes somos ====== -->
+    <!-- Sección independiente para dar contexto temprano, accesible desde el nav -->
+    <section id="quienes-somos" class="section">
+      <div class="container">
+        <!-- about-block: alinea visualmente el título con el contenido (misma columna/anchura) -->
+        <div class="about-block">
+          <h2 class="serif">Quiénes somos</h2>
+          <div class="card about-card animate-on-scroll" aria-label="Quiénes somos">
+            <p class="text-muted">
+              En Chen &amp; Co. Soluciones Contables creemos que la contabilidad no debe ser un obstáculo, sino un aliado para hacer crecer tu negocio.
+              Somos una firma contable joven, dinámica y profesional, creada para acompañar a emprendedores, pequeñas y medianas empresas en Panamá a mantener
+              sus finanzas claras, ordenadas y en cumplimiento con la ley.
+            </p>
+            <p class="text-muted">
+              Nos distingue un enfoque humano y cercano: explicamos la contabilidad sin tecnicismos, con soluciones adaptadas a cada cliente y con la
+              transparencia que tu negocio necesita. Combinamos formalidad y frescura, apoyándonos en la tecnología y en un trato directo para que nuestros
+              clientes siempre tengan claridad en sus decisiones financieras.
+            </p>
+            <p class="text-muted mb-09">
+              En Chen &amp; Co. no hablamos solo de números: hablamos de personas, de metas y de negocios que quieren crecer de manera segura.
+            </p>
+
+            <!-- Valores / palabras clave: “pills” visuales (no son enlaces) -->
+            <div class="about-tags" aria-label="Palabras clave que definen a Chen &amp; Co.">
+              <span class="pill">Confianza</span>
+              <span class="pill">Cercanía</span>
+              <span class="pill">Profesionalismo</span>
+              <span class="pill">Innovación</span>
+              <span class="pill">Educación</span>
             </div>
           </div>
         </div>
@@ -193,8 +244,10 @@
     <!-- ====== Sobre nosotros (compacto) ====== -->
     <section class="section">
       <div class="container">
-        <h2 class="serif fs-14">Sobre nosotros</h2>
-        <div class="card card-inline animate-on-scroll">
+        <div class="about-block">
+          <h2 class="serif fs-14">Sobre nosotros</h2>
+          <!-- Tarjeta compacta: identidad + rol -->
+          <div class="card card-inline animate-on-scroll">
           <img
             alt="Winny Chen"
             class="avatar avatar--winny"
@@ -209,41 +262,17 @@
             <div class="serif brand-navy fw-700">Winny Chen</div>
             <div class="subtle">Lead Accountant &amp; Founder</div>
           </div>
-        </div>
-
-        <article class="card about-card animate-on-scroll" aria-label="Quiénes somos">
-          <h3 class="serif">Quiénes Somos</h3>
-          <p class="text-muted">
-            En Chen &amp; Co. Soluciones Contables creemos que la contabilidad no debe ser un obstáculo, sino un aliado para hacer crecer tu negocio.
-            Somos una firma contable joven, dinámica y profesional, creada para acompañar a emprendedores, pequeñas y medianas empresas en Panamá a mantener
-            sus finanzas claras, ordenadas y en cumplimiento con la ley.
-          </p>
-          <p class="text-muted">
-            Nos distingue un enfoque humano y cercano: explicamos la contabilidad sin tecnicismos, con soluciones adaptadas a cada cliente y con la
-            transparencia que tu negocio necesita. Combinamos formalidad y frescura, apoyándonos en la tecnología y en un trato directo para que nuestros
-            clientes siempre tengan claridad en sus decisiones financieras.
-          </p>
-          <p class="text-muted mb-09">
-            En Chen &amp; Co. no hablamos solo de números: hablamos de personas, de metas y de negocios que quieren crecer de manera segura.
-          </p>
-
-          <blockquote class="about-quote">
-            <p>
-              En Chen &amp; Co. creemos que la contabilidad debe ser clara, accesible y al servicio de quienes mueven la economía: los emprendedores y los
-              pequeños negocios. Mi compromiso es acompañarte con transparencia y cercanía, para que tengas la tranquilidad de que tus finanzas están en buenas
-              manos.
-            </p>
-            <cite>— Winny Chen, Founder</cite>
-          </blockquote>
-
-          <div class="about-tags" aria-label="Valores y palabras clave">
-            <span class="pill">Confianza</span>
-            <span class="pill">Cercanía</span>
-            <span class="pill">Profesionalismo</span>
-            <span class="pill">Innovación</span>
-            <span class="pill">Educación</span>
           </div>
-        </article>
+          <!-- Mensaje de la CEO: cita destacada para dar cercanía y confianza -->
+          <blockquote class="about-quote animate-on-scroll" aria-label="Mensaje de la CEO">
+          <p>
+            En Chen &amp; Co. creemos que la contabilidad debe ser clara, accesible y al servicio de quienes mueven la economía: los emprendedores y los
+            pequeños negocios. Mi compromiso es acompañarte con transparencia y cercanía, para que tengas la tranquilidad de que tus finanzas están en buenas
+            manos.
+          </p>
+          <cite>— Winny Chen, Founder</cite>
+          </blockquote>
+        </div>
       </div>
     </section>
 
