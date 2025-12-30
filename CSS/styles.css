@@ -236,6 +236,15 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
 form{display:grid;gap:.75rem}
 input,textarea{border:1px solid var(--border);border-radius:12px;padding:.75rem;font:inherit}
 textarea{min-height:120px;resize:vertical}
+.contact-actions{display:flex;flex-wrap:wrap;gap:.7rem;margin:.75rem 0}
+.btn-whatsapp{
+  background:#25D366;
+  color:#0b1b12 !important;
+  font-weight:800;
+}
+.btn-whatsapp:hover{
+  background:#1fb458;
+}
 
 /* Footer */
 footer{background:#fff;border-top:1px solid var(--border);padding:22px 0;color:#666}

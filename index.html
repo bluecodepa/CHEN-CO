@@ -302,15 +302,43 @@
               WhatsApp: <a href="https://wa.me/50769816860">6981-6860</a> ·
               <a href="mailto:chencontadores@gmail.com">chencontadores@gmail.com</a>
             </p>
-            <form action="mailto:chencontadores@gmail.com" method="post" enctype="text/plain" aria-label="Formulario de contacto">
+            <!-- Acceso rápido: WhatsApp (recomendado para contacto inmediato) -->
+            <div class="contact-actions" aria-label="Acciones de contacto">
+              <a
+                class="btn btn-whatsapp"
+                href="https://wa.me/50769816860?text=Hola%20Chen%20%26%20Co.%20Quisiera%20agendar%20una%20consulta."
+                target="_blank"
+                rel="noopener"
+              >
+                Escríbenos por WhatsApp
+              </a>
+            </div>
+
+            <!--
+              Formulario (mailto):
+              - Abre el cliente de correo del visitante con la info prellenada.
+              - No “envía” desde el sitio (para envío real se requiere backend/servicio de formularios).
+              - Para que el navegador permita Autocompletar, añade autocomplete + tipos correctos.
+            -->
+            <form action="mailto:chencontadores@gmail.com" method="post" enctype="text/plain" aria-label="Formulario de contacto" autocomplete="on">
               <label class="sr-only" for="nombre">Nombre</label>
-              <input id="nombre" name="Nombre" required placeholder="Nombre" />
+              <input id="nombre" name="Nombre" type="text" required placeholder="Nombre" autocomplete="name" />
               <label class="sr-only" for="empresa">Empresa</label>
-              <input id="empresa" name="Empresa" placeholder="Empresa (opcional)" />
+              <input id="empresa" name="Empresa" type="text" placeholder="Empresa (opcional)" autocomplete="organization" />
               <label class="sr-only" for="email">Correo</label>
-              <input id="email" name="Email" type="email" required placeholder="Correo" />
+              <input
+                id="email"
+                name="Email"
+                type="email"
+                required
+                placeholder="Correo"
+                autocomplete="email"
+                inputmode="email"
+                autocapitalize="none"
+                spellcheck="false"
+              />
               <label class="sr-only" for="mensaje">Mensaje</label>
-              <textarea id="mensaje" name="Mensaje" placeholder="Cuéntanos brevemente qué necesitas"></textarea>
+              <textarea id="mensaje" name="Mensaje" placeholder="Cuéntanos brevemente qué necesitas" autocomplete="off"></textarea>
               <button class="btn" type="submit">Enviar</button>
             </form>
           </div>
