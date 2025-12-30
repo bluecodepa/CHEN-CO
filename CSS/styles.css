@@ -100,6 +100,21 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
 .svc .thumb img{width:100%;height:100%;object-fit:cover}
 .svc .body{padding:14px 16px}
 
+/* Ilustraciones (SVG) dentro de recuadros:
+   - Usamos "contain" para que no se recorten
+   - Padding para respiración visual
+*/
+.svc .thumb img.illustration{
+  object-fit:contain;
+  padding:16px;
+  background:linear-gradient(180deg,#f6f8ff 0%, #ffffff 60%);
+}
+.ratio img.illustration{
+  object-fit:contain;
+  padding:18px;
+  background:#ffffff;
+}
+
 /* ====== Por qué / Proceso ====== */
 .why .item{padding:20px}
 .timeline{position:relative;margin-top:18px}

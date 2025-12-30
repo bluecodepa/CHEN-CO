@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ilustración: declaración de impuestos">
+  <rect width="800" height="600" fill="#F6F7FB"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="210" y="110" width="380" height="420" rx="24" fill="#FFFFFF" stroke="#1F2A44" stroke-width="8"/>
+    <path d="M270 190h260" stroke="#1F2A44" stroke-width="10"/>
+    <path d="M270 235h210" stroke="#6F7A90" stroke-width="8"/>
+    <path d="M270 275h240" stroke="#6F7A90" stroke-width="8"/>
+    <path d="M270 315h190" stroke="#6F7A90" stroke-width="8"/>
+    <path d="M270 360h220" stroke="#6F7A90" stroke-width="8"/>
+    <rect x="270" y="400" width="140" height="70" rx="14" fill="#F6F8FF" stroke="#4C7AF2" stroke-width="8"/>
+    <path d="M445 425h90" stroke="#1F2A44" stroke-width="10"/>
+    <path d="M445 455h70" stroke="#1F2A44" stroke-width="10"/>
+    <circle cx="545" cy="450" r="34" fill="#F6F8FF" stroke="#4C7AF2" stroke-width="10"/>
+    <path d="M536 450l8 9 18-22" stroke="#4C7AF2" stroke-width="10"/>
+    <path d="M205 520c42-38 98-58 160-58" stroke="#4C7AF2" stroke-width="10" opacity=".6"/>
+    <path d="M590 150c38 24 68 56 90 96" stroke="#4C7AF2" stroke-width="10" opacity=".5"/>
+  </g>
+</svg>
+

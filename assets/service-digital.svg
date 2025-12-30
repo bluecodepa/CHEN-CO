@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ilustración: servicios digitales">
+  <rect width="800" height="600" fill="#F6F7FB"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="160" y="170" width="480" height="300" rx="26" fill="#FFFFFF" stroke="#1F2A44" stroke-width="8"/>
+    <path d="M160 230h480" stroke="#1F2A44" stroke-width="8"/>
+    <circle cx="205" cy="202" r="10" fill="#4C7AF2" stroke="#4C7AF2" stroke-width="8"/>
+    <circle cx="240" cy="202" r="10" fill="#6F7A90" stroke="#6F7A90" stroke-width="8"/>
+    <circle cx="275" cy="202" r="10" fill="#6F7A90" stroke="#6F7A90" stroke-width="8"/>
+
+    <path d="M290 390h220" stroke="#6F7A90" stroke-width="8"/>
+    <path d="M290 350h170" stroke="#6F7A90" stroke-width="8"/>
+
+    <path d="M300 300c0-34 28-62 62-62 20 0 38 10 50 25 6-4 13-6 21-6 22 0 40 18 40 40 20 2 36 20 36 40 0 22-18 40-40 40H340c-22 0-40-18-40-40 0-16 9-30 23-37-2-4-3-8-3-12Z"
+      fill="#F6F8FF" stroke="#4C7AF2" stroke-width="10"/>
+
+    <path d="M210 430c34-22 74-34 120-36" stroke="#4C7AF2" stroke-width="10" opacity=".55"/>
+    <path d="M600 450c42 10 76 28 100 54" stroke="#4C7AF2" stroke-width="10" opacity=".5"/>
+  </g>
+</svg>
+

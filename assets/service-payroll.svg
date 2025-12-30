@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ilustración: nómina y seguro social">
+  <rect width="800" height="600" fill="#F6F7FB"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="170" y="150" width="460" height="330" rx="22" fill="#FFFFFF" stroke="#1F2A44" stroke-width="8"/>
+    <path d="M220 210h220" stroke="#1F2A44" stroke-width="10"/>
+    <path d="M220 250h300" stroke="#6F7A90" stroke-width="8"/>
+    <path d="M220 290h260" stroke="#6F7A90" stroke-width="8"/>
+    <path d="M220 330h290" stroke="#6F7A90" stroke-width="8"/>
+    <rect x="220" y="370" width="180" height="70" rx="14" fill="#F6F8FF" stroke="#4C7AF2" stroke-width="8"/>
+    <path d="M430 405h150" stroke="#1F2A44" stroke-width="10"/>
+
+    <circle cx="300" cy="120" r="36" fill="#FFFFFF" stroke="#1F2A44" stroke-width="8"/>
+    <path d="M270 200c10-34 34-56 60-56s50 22 60 56" stroke="#1F2A44" stroke-width="8"/>
+
+    <circle cx="540" cy="115" r="30" fill="#F6F8FF" stroke="#4C7AF2" stroke-width="10"/>
+    <path d="M540 100v30" stroke="#4C7AF2" stroke-width="10"/>
+    <path d="M525 115h30" stroke="#4C7AF2" stroke-width="10"/>
+
+    <path d="M135 470c42-18 84-22 126-12" stroke="#4C7AF2" stroke-width="10" opacity=".55"/>
+    <path d="M610 455c40 8 72 24 96 48" stroke="#4C7AF2" stroke-width="10" opacity=".5"/>
+  </g>
+</svg>
+
